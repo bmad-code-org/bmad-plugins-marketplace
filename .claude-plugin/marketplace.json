@@ -1,0 +1,29 @@
+{
+  "name": "bmad-plugins",
+  "owner": {
+    "name": "bmad-code-org",
+    "email": "[email protected]"
+  },
+  "metadata": {
+    "description": "Official plugin marketplace for BMad Method - AI-driven agile development framework",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "bmad-utility-skills",
+      "source": {
+        "source": "github",
+        "repo": "bmad-code-org/bmad-utility-skills"
+      },
+      "description": "Utility skills for BMad contributors - issue triage, changelog drafting, and release automation",
+      "version": "1.0.0",
+      "author": {
+        "name": "bmad-code-org"
+      },
+      "homepage": "https://github.com/bmad-code-org/bmad-utility-skills",
+      "repository": "https://github.com/bmad-code-org/bmad-utility-skills",
+      "license": "MIT",
+      "keywords": ["bmad", "github", "triage", "changelog", "release", "npm"]
+    }
+  ]
+}

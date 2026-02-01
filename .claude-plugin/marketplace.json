@@ -16,7 +16,7 @@
         "repo": "bmad-code-org/bmad-utility-skills"
       },
       "description": "Utility skills for BMad contributors - issue triage, changelog drafting, and release automation",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": {
         "name": "bmad-code-org"
       },

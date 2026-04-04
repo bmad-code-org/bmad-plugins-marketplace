@@ -1,0 +1,18 @@
+name: bmad-utility-skills
+description: Utility skills for BMad contributors - issue triage, changelog drafting, and release automation
+repository: https://github.com/bmad-code-org/bmad-utility-skills
+author: bmad-code-org
+license: MIT
+type: bmad-org
+category: software-development
+subcategory: dev-tools
+keywords:
+  - bmad
+  - github
+  - triage
+  - changelog
+  - release
+  - npm
+
+# version: tracks main
+trust_tier: bmad-certified

@@ -1,0 +1,24 @@
+name: whiteport-design-studio
+code: wds
+description: Whiteport Design Studio (For UX Professionals)
+repository: https://github.com/bmad-code-org/bmad-method-wds-expansion
+module_definition: src/module.yaml
+npm_package: bmad-method-wds-expansion
+author: bmad-code-org
+license: MIT
+default_selected: false
+type: community
+category: design-and-creative
+subcategory: ux-design
+keywords:
+  - bmad
+  - ux
+  - design
+  - web-design
+
+version: "0.1.0"
+approved_tag: v0.1.0
+approved_sha: null # TODO: pin to actual commit SHA
+approved_date: "2026-04-04"
+reviewer: bmad-core
+trust_tier: bmad-certified

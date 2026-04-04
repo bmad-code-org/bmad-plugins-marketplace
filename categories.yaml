@@ -1,0 +1,300 @@
+categories:
+  ai-and-machine-learning:
+    name: AI & Machine Learning
+    subcategories:
+      ai-engineering:
+        name: AI Engineering
+        description: Model integration, prompt engineering, AI application development
+      computer-vision:
+        name: Computer Vision
+        description: Image processing, object detection, video analysis
+      data-science:
+        name: Data Science
+        description: Analysis, visualization, statistical modeling, research
+      mlops:
+        name: ML Ops
+        description: Model training, deployment, monitoring, pipelines
+      nlp:
+        name: NLP & Language
+        description: Natural language processing, text analysis, translation
+
+  ai-companions:
+    name: AI Companions
+    subcategories:
+      coaching:
+        name: Coaching & Mentoring
+        description: Persistent coaching personas for skill development, career guidance, accountability
+      creative-partners:
+        name: Creative Partners
+        description: Collaborative personas for writing, art, music, brainstorming
+      learning-companions:
+        name: Learning Companions
+        description: Study buddies, language partners, tutoring personas with progress memory
+      personal-assistants:
+        name: Personal Assistants
+        description: Ongoing AI assistants with memory for daily tasks, scheduling, decision support
+      roleplay:
+        name: Roleplay & Characters
+        description: Persistent characters for storytelling, tabletop RPGs, interactive fiction
+      wellness-companions:
+        name: Wellness Companions
+        description: Journaling partners, dream coaches, mindfulness guides, habit trackers
+
+  business-and-strategy:
+    name: Business & Strategy
+    subcategories:
+      business-analysis:
+        name: Business Analysis
+        description: Process mapping, requirements gathering, stakeholder management
+      consulting:
+        name: Consulting
+        description: Client engagements, deliverables, frameworks
+      product:
+        name: Product Management
+        description: Roadmaps, requirements, user stories, prioritization
+      project-management:
+        name: Project Management
+        description: Planning, tracking, agile ceremonies, resource allocation
+      strategy:
+        name: Strategy & Planning
+        description: Business strategy, competitive analysis, market research
+
+  community-and-social:
+    name: Community & Social
+    subcategories:
+      community:
+        name: Community Management
+        description: Discord/forum management, moderation, engagement
+      events:
+        name: Events
+        description: Event planning, conferences, meetups, scheduling
+      nonprofit:
+        name: Nonprofit
+        description: Fundraising, volunteer management, grant writing
+      open-source:
+        name: Open Source
+        description: Contributor management, release workflows, community governance
+
+  design-and-creative:
+    name: Design & Creative
+    subcategories:
+      3d-animation:
+        name: 3D & Animation
+        description: 3D modeling, animation, rendering, VFX
+      audio:
+        name: Audio & Music
+        description: Podcasting, music production, sound engineering
+      content-writing:
+        name: Content Writing
+        description: Blog posts, documentation, copywriting, technical writing
+      graphic-design:
+        name: Graphic Design
+        description: Branding, illustration, print, visual identity
+      photography:
+        name: Photography
+        description: Photo editing, workflow management, asset organization
+      ui-design:
+        name: UI Design
+        description: Visual design, design systems, component libraries
+      ux-design:
+        name: UX Design
+        description: User research, wireframes, prototyping, usability
+      video:
+        name: Video & Film
+        description: Video production, editing, storyboarding, motion graphics
+
+  education-and-research:
+    name: Education & Research
+    subcategories:
+      learning:
+        name: Learning
+        description: Study aids, skill development, knowledge management
+      research:
+        name: Academic Research
+        description: Literature review, methodology, paper writing, citations
+      science:
+        name: Science
+        description: Lab workflows, experiment design, data collection
+      teaching:
+        name: Teaching & Training
+        description: Curriculum design, lesson planning, educational content
+
+  entertainment-and-media:
+    name: Entertainment & Media
+    subcategories:
+      sports:
+        name: Sports & Competition
+        description: Team management, statistics, event planning
+      storytelling:
+        name: Storytelling & Fiction
+        description: Novel writing, world-building, character development
+      streaming:
+        name: Streaming & Broadcast
+        description: Stream management, content scheduling, audience engagement
+      tabletop:
+        name: Tabletop & RPG
+        description: Campaign management, character sheets, world generation
+
+  game-development:
+    name: Game Development
+    subcategories:
+      game-art:
+        name: Game Art & Assets
+        description: 2D/3D art pipelines, asset management, shaders
+      game-audio:
+        name: Game Audio
+        description: Sound design, music composition, audio implementation
+      game-design:
+        name: Game Design
+        description: Mechanics, systems, level design, narrative design
+      game-engine:
+        name: Game Engine
+        description: Unity, Unreal, Godot, custom engine workflows
+      game-qa:
+        name: Game QA
+        description: Playtesting, bug triage, performance profiling
+
+  health-and-wellness:
+    name: Health & Wellness
+    subcategories:
+      fitness:
+        name: Fitness & Nutrition
+        description: Training programs, meal planning, progress tracking
+      health:
+        name: Health & Medical
+        description: Clinical workflows, patient documentation, health data
+      mental-health:
+        name: Mental Health
+        description: Journaling, habit tracking, mindfulness, therapy support
+
+  infrastructure-and-platforms:
+    name: Infrastructure & Platforms
+    subcategories:
+      cloud:
+        name: Cloud Platforms
+        description: AWS, GCP, Azure specific tooling and workflows
+      databases:
+        name: Databases
+        description: Database administration, migration, optimization
+      networking:
+        name: Networking
+        description: Network configuration, monitoring, troubleshooting
+      observability:
+        name: Observability
+        description: Logging, monitoring, alerting, incident response
+
+  marketing-and-growth:
+    name: Marketing & Growth
+    subcategories:
+      analytics:
+        name: Analytics & Metrics
+        description: Tracking, reporting, attribution, dashboards
+      brand:
+        name: Brand & Communications
+        description: Brand voice, PR, messaging, public communications
+      content-marketing:
+        name: Content Marketing
+        description: Content strategy, editorial calendars, distribution
+      email-marketing:
+        name: Email Marketing
+        description: Campaigns, newsletters, automation sequences
+      seo:
+        name: SEO & Search
+        description: Search optimization, keyword research, site audits
+      social-media:
+        name: Social Media
+        description: Platform management, content scheduling, engagement
+
+  operations-and-finance:
+    name: Operations & Finance
+    subcategories:
+      finance:
+        name: Finance & Accounting
+        description: Budgeting, forecasting, bookkeeping, financial reporting
+      hr:
+        name: HR & People
+        description: Recruiting, onboarding, performance management, culture
+      legal:
+        name: Legal & Compliance
+        description: Contracts, regulatory compliance, policy management
+      operations:
+        name: Operations
+        description: Process optimization, vendor management, logistics
+      support:
+        name: Customer Support
+        description: Ticketing, knowledge bases, escalation workflows
+
+  personal-and-lifestyle:
+    name: Personal & Lifestyle
+    subcategories:
+      hobbies:
+        name: Hobbies & Crafts
+        description: Crafting, collecting, DIY projects, maker workflows
+      home:
+        name: Home & Family
+        description: Home management, meal planning, family coordination
+      personal-finance:
+        name: Personal Finance
+        description: Budgeting, investing, expense tracking
+      productivity:
+        name: Productivity
+        description: Task management, time tracking, personal organization
+      travel:
+        name: Travel
+        description: Trip planning, itineraries, travel documentation
+
+  sales-and-revenue:
+    name: Sales & Revenue
+    subcategories:
+      crm:
+        name: CRM
+        description: Customer relationship management, contact workflows
+      ecommerce:
+        name: E-Commerce
+        description: Online stores, product catalogs, checkout optimization
+      pricing:
+        name: Pricing & Revenue
+        description: Pricing strategy, revenue modeling, subscription management
+      sales:
+        name: Sales
+        description: Prospecting, pipeline management, deal strategy
+
+  software-development:
+    name: Software Development
+    subcategories:
+      api-design:
+        name: API Design
+        description: REST, GraphQL, gRPC design and documentation
+      architecture:
+        name: Architecture & Design
+        description: System design, technical specifications, architectural decision records
+      backend:
+        name: Backend Development
+        description: APIs, services, databases, server-side logic
+      data-engineering:
+        name: Data Engineering
+        description: Pipelines, ETL, data warehousing, data modeling
+      dev-tools:
+        name: Developer Tools
+        description: Code generation, refactoring, linting, documentation tooling
+      devops:
+        name: DevOps & Infrastructure
+        description: CI/CD, containers, cloud infrastructure, deployment automation
+      embedded:
+        name: Embedded & IoT
+        description: Firmware, microcontrollers, hardware interfaces, IoT platforms
+      frontend:
+        name: Frontend Development
+        description: UI components, web frameworks, client-side tooling
+      fullstack:
+        name: Full-Stack Development
+        description: End-to-end application development spanning frontend and backend
+      mobile:
+        name: Mobile Development
+        description: iOS, Android, cross-platform mobile applications
+      security:
+        name: Security
+        description: Application security, vulnerability assessment, compliance scanning
+      testing:
+        name: Testing & QA
+        description: Test strategy, automation, quality assurance, release gates

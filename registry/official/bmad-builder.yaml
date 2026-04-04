@@ -1,0 +1,22 @@
+name: bmad-builder
+code: bmb
+description: Build AI agents, workflows, and modules from a conversation — Agent Builder, Workflow Builder, Module Builder, and Setup
+repository: https://github.com/bmad-code-org/bmad-builder
+module_definition: skills/module.yaml
+npm_package: bmad-builder
+author: bmad-code-org
+license: MIT
+default_selected: false
+type: bmad-org
+category: software-development
+subcategory: dev-tools
+keywords:
+  - bmad
+  - agent-builder
+  - workflow-builder
+  - module-builder
+  - skill-factory
+  - ai-agents
+
+# version: tracks main
+trust_tier: bmad-certified

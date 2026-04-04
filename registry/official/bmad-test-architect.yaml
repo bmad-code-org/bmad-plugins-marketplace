@@ -1,0 +1,21 @@
+name: bmad-method-test-architecture-enterprise
+code: tea
+description: Master Test Architect for quality strategy, test automation, and release gates
+repository: https://github.com/bmad-code-org/bmad-method-test-architecture-enterprise
+module_definition: src/module.yaml
+npm_package: bmad-method-test-architecture-enterprise
+author: bmad-code-org
+license: MIT
+default_selected: false
+type: bmad-org
+category: software-development
+subcategory: testing
+keywords:
+  - bmad
+  - testing
+  - test-architecture
+  - quality
+  - automation
+
+# version: tracks main
+trust_tier: bmad-certified

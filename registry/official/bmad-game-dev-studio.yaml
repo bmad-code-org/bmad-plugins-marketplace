@@ -1,0 +1,21 @@
+name: bmad-game-dev-studio
+code: gds
+description: Game development agents and workflows
+repository: https://github.com/bmad-code-org/bmad-module-game-dev-studio
+module_definition: src/module.yaml
+npm_package: bmad-game-dev-studio
+author: bmad-code-org
+license: MIT
+default_selected: false
+type: bmad-org
+category: game-development
+subcategory: game-engine
+keywords:
+  - bmad
+  - game-dev
+  - unity
+  - unreal
+  - godot
+
+# version: tracks main
+trust_tier: bmad-certified

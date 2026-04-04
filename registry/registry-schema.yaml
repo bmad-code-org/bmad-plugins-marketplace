@@ -1,0 +1,85 @@
+# Registry Entry Schema
+# All registry YAML files must conform to this schema.
+# Fields marked (required) must be present. Fields marked (community only) apply only to community modules.
+
+schema:
+  # Module identity
+  name:
+    type: string
+    required: true
+    description: Module package name — lowercase, hyphenated
+
+  code:
+    type: string
+    required: false
+    description: Short module code (e.g., bmb, cis, gds) — used by the BMad installer
+
+  description:
+    type: string
+    required: true
+    description: One-sentence description of what the module does
+
+  repository:
+    type: string
+    required: true
+    description: Full GitHub repository URL
+
+  module_definition:
+    type: string
+    required: false
+    description: Path to module.yaml within the repo (e.g., skills/module.yaml)
+
+  npm_package:
+    type: string
+    required: false
+    description: npm package name if published to npm
+
+  author:
+    type: string
+    required: true
+    description: Author name or organization
+
+  license:
+    type: string
+    required: true
+    description: SPDX license identifier (e.g., MIT, Apache-2.0)
+
+  default_selected:
+    type: boolean
+    required: false
+    description: Whether the module is selected by default in the installer
+
+  # Classification
+  type:
+    type: string
+    required: true
+    enum: [bmad-org, community]
+    description: Module type — bmad-org (official/utility) or community
+
+  category:
+    type: string
+    required: true
+    description: Category slug from categories.yaml
+
+  subcategory:
+    type: string
+    required: true
+    description: Subcategory slug from categories.yaml
+
+  keywords:
+    type: array
+    required: false
+    description: List of keywords for search and discovery
+
+  # Version and trust
+  # version: (community only, required) — pinned approved version
+  # approved_tag: (community only, required) — git tag of approved version
+  # approved_sha: (community only, required) — full commit SHA of approved tag
+  # approved_date: (community only, required) — date of approval (YYYY-MM-DD)
+  # reviewer: (community only, required) — GitHub handle of reviewer
+
+  trust_tier:
+    type: string
+    required: true
+    enum: [unverified, community-reviewed, bmad-certified]
+    description: Current trust level

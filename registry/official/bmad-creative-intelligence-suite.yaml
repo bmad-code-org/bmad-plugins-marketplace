@@ -1,0 +1,21 @@
+name: bmad-creative-intelligence-suite
+code: cis
+description: Creative tools for writing, brainstorming, and more
+repository: https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite
+module_definition: src/module.yaml
+npm_package: bmad-creative-intelligence-suite
+author: bmad-code-org
+license: MIT
+default_selected: false
+type: bmad-org
+category: business-and-strategy
+subcategory: strategy
+keywords:
+  - bmad
+  - creative
+  - brainstorming
+  - writing
+  - innovation
+
+# version: tracks main
+trust_tier: bmad-certified

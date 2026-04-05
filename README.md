@@ -68,6 +68,17 @@ npx bmad-method install
 - [BMad Builder](https://github.com/bmad-code-org/bmad-builder) — Build custom modules
 - [Distribute Your Module](https://bmad-builder-docs.bmad-method.org/how-to/distribute-your-module) — Repo setup guide
 
+## Community
+
+- [Discord](https://discord.gg/gk8jAdXWmj) — Get help, share ideas, collaborate
+- [YouTube](https://youtube.com/@BMadCode) — Tutorials, master class, and more
+- [X / Twitter](https://x.com/BMadCode)
+- [Website](https://bmadcode.com)
+
+## Support BMad
+
+BMad is free for everyone and always will be. Star this repo, [buy me a coffee](https://buymeacoffee.com/bmad), or email contact@bmadcode.com for corporate sponsorship.
+
 ## License
 
 MIT

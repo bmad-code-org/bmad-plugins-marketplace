@@ -1,5 +1,8 @@
 # BMad Plugins Marketplace
 
+[![Python Version](https://img.shields.io/badge/python-%3E%3D3.10-blue?logo=python&logoColor=white)](https://www.python.org)
+[![uv](https://img.shields.io/badge/uv-package%20manager-blueviolet?logo=uv)](https://docs.astral.sh/uv/)
+
 The official registry of BMad modules. This repository is the single source of truth for what modules are available, their versions, and their trust status.
 
 ## Submit Your Module

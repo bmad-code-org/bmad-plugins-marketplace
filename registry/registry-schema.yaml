@@ -88,3 +88,14 @@ schema:
     required: true
     enum: [unverified, community-reviewed, bmad-certified]
     description: Current trust level
+
+  # Promotion / Featured
+  promoted:
+    type: boolean
+    required: false
+    description: Whether this module appears in the Featured section of the community browser
+
+  promoted_rank:
+    type: integer
+    required: false
+    description: Sort order within Featured section (lower = higher priority)

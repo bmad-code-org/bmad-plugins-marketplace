@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Generate INDEX.md from registry YAML files and categories.yaml."""
+"""Generate INDEX.md and community-index.yaml from registry YAML files."""
 
 import yaml
+from datetime import datetime, timezone
 from pathlib import Path
 
 REGISTRY_DIR = Path("registry")
 CATEGORIES_FILE = Path("categories.yaml")
 OUTPUT_FILE = Path("INDEX.md")
+COMMUNITY_INDEX_FILE = REGISTRY_DIR / "community-index.yaml"
 
 
 def load_yaml(path):
@@ -43,9 +45,33 @@ def tier_badge(tier):
     return badges.get(tier, tier)
 
 
+def generate_community_index(modules):
+    """Generate community-index.yaml from community modules."""
+    community = [m for m in modules if m.get("_directory") == "community"]
+
+    # Strip internal _directory key before writing
+    clean_modules = []
+    for mod in community:
+        clean = {k: v for k, v in mod.items() if k != "_directory"}
+        clean_modules.append(clean)
+
+    index_data = {
+        "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "modules": clean_modules,
+    }
+
+    content = "# Auto-generated from registry/community/*.yaml - do not edit manually\n"
+    content += yaml.dump(index_data, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    COMMUNITY_INDEX_FILE.write_text(content)
+    print(f"Generated {COMMUNITY_INDEX_FILE} with {len(clean_modules)} community modules")
+
+
 def main():
     categories = load_categories()
     modules = load_modules()
+
+    # Generate community-index.yaml
+    generate_community_index(modules)
 
     # Group modules by category
     by_category = {}

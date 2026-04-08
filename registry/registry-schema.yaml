@@ -9,6 +9,11 @@ schema:
     required: true
     description: Module package name — lowercase, hyphenated
 
+  display_name:
+    type: string
+    required: true
+    description: Human-readable module name shown in the installer UI (e.g., "BMad Builder")
+
   code:
     type: string
     required: false

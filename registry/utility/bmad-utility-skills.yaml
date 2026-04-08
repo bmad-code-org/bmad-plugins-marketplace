@@ -1,4 +1,5 @@
 name: bmad-utility-skills
+display_name: BMad Utility Skills
 description: Utility skills for BMad contributors - issue triage, changelog drafting, and release automation
 repository: https://github.com/bmad-code-org/bmad-utility-skills
 author: bmad-code-org

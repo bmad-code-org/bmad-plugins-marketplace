@@ -21,9 +21,9 @@ keywords:
   - story implementation
   - pull request automation
 
-version: "1.0.0"
-approved_tag: v1.0.0
-approved_sha: a4833dd1773d8c7979d5ec66733fec879e26c3c6
-approved_date: "2026-04-05"
+version: "1.1.0"
+approved_tag: v1.1.0
+approved_sha: 147dcdd947b219b8dd26053b9cf82f809ad5da2a
+approved_date: "2026-04-11"
 reviewer: pending
 trust_tier: unverified

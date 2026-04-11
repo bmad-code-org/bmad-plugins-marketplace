@@ -1,0 +1,25 @@
+name: suno-band-manager
+display_name: Suno Band Manager (Mac)
+code: suno
+description: AI-powered music production assistant for creating Suno-ready song packages
+repository: https://github.com/zarlor/suno-band-manager
+module_definition: src/skills/suno-setup/assets/module.yaml
+author: zarlor
+license: MIT
+default_selected: false
+type: community
+category: design-and-creative
+subcategory: audio
+keywords:
+  - bmad
+  - suno
+  - ai-music
+  - music-production
+  - song-creation
+
+version: "1.6.4"
+approved_tag: v1.6.4
+approved_sha: 88a48bf49ef4c1a7497e02f1dbc7316a8bdff386
+trust_tier: unverified
+approved_date: "2026-04-11"
+reviewer: pending

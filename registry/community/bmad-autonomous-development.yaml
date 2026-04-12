@@ -1,0 +1,29 @@
+name: bmad-autonomous-development
+code: bad
+description: Autonomous development orchestrator that runs fully autonomous, parallel, multi-agent pipelines through the full story lifecycle (create → dev → review → PR) driven by your sprint backlog and dependency graph.
+repository: https://github.com/stephenleo/bmad-autonomous-development
+author: stephenleo
+license: MIT
+default_selected: false
+type: community
+category: software-development
+subcategory: dev-tools
+keywords:
+  - bmad
+  - bmad-method
+  - autonomous development
+  - agent swarm
+  - subagent
+  - parallel development
+  - agentic
+  - orchestration
+  - sprint automation
+  - story implementation
+  - pull request automation
+
+version: "1.2.0"
+approved_tag: v1.2.0
+approved_sha: db95d2cf2ce8c4504e3ffe5ea035597d5db579e2
+approved_date: "2026-04-12"
+reviewer: pending
+trust_tier: unverified

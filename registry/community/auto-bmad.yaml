@@ -1,0 +1,28 @@
+name: auto-bmad
+display_name: Auto BMAD
+code: abm
+description: Automated BMAD pipeline orchestration with quick mode (3-step) and full mode (11-step) sprint execution.
+repository: https://github.com/bramvera/auto-bmad
+module_definition: auto-bmad/skills/auto-bmad-setup/assets/module.yaml
+author: bramvera
+license: MIT
+default_selected: false
+type: community
+category: software-development
+subcategory: dev-tools
+keywords:
+  - bmad
+  - pipeline
+  - automation
+  - orchestration
+  - sdlc
+  - sprint
+  - tdd
+  - code-review
+
+version: "0.9.2"
+approved_tag: v0.9.2
+approved_sha: 8edfcb05958b56e43a4c6979c685cdfe53edae55
+approved_date: "2026-04-13"
+reviewer: pending
+trust_tier: unverified

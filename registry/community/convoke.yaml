@@ -5,7 +5,7 @@
 name: convoke-vortex
 display_name: "Convoke: Vortex Discovery Framework"
 code: bme
-description: "Vortex Framework — 7-stream product discovery for product teams, IT transformation consultants, and operators based on the Shiftup Innovation Vortex."
+description: "Vortex Framework — 7-stream product discovery for IT transformation consultants."
 repository: https://github.com/amalik/convoke-agents
 module_definition: _bmad/bme/_vortex/module.yaml
 npm_package: convoke-agents

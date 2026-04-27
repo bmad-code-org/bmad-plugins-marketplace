@@ -1,6 +1,31 @@
 # Auto-generated from registry/community/*.yaml - do not edit manually
-generated: '2026-04-08T04:41:04Z'
+generated: '2026-04-27T01:15:27Z'
 modules:
+- name: suno-band-manager
+  display_name: Suno Band Manager (Mac)
+  code: suno
+  description: AI-powered music production assistant for creating Suno-ready song
+    packages
+  repository: https://github.com/zarlor/suno-band-manager
+  module_definition: src/skills/suno-setup/assets/module.yaml
+  author: zarlor
+  license: MIT
+  default_selected: false
+  type: community
+  category: design-and-creative
+  subcategory: audio
+  keywords:
+  - bmad
+  - suno
+  - ai-music
+  - music-production
+  - song-creation
+  version: 1.6.7
+  approved_tag: v1.6.7
+  approved_sha: c9bcc02c18f6f25eaa493a1b9170a6aabd993d67
+  trust_tier: unverified
+  approved_date: '2026-04-22'
+  reviewer: pending
 - name: whiteport-design-studio
   display_name: Whiteport Design Studio (For UX Professionals)
   code: wds

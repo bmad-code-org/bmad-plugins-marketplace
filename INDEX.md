@@ -1,13 +1,14 @@
 # BMad Marketplace Module Index
 
-*Auto-generated from registry entries. 2 modules registered.*
+*Auto-generated from registry entries. 3 modules registered.*
 
-**Official:** 0 | **Utility:** 1 | **Community:** 1
+**Official:** 0 | **Utility:** 1 | **Community:** 2
 
 ## Design & Creative
 
 | Module | Type | Subcategory | Trust | Description |
 | ------ | ---- | ----------- | ----- | ----------- |
+| [suno-band-manager](https://github.com/zarlor/suno-band-manager) | community | Audio & Music | Unverified | AI-powered music production assistant for creating Suno-ready song packages |
 | [whiteport-design-studio](https://github.com/bmad-code-org/bmad-method-wds-expansion) | community | UX Design | BMad Certified | Whiteport Design Studio (For UX Professionals) |
 
 ## Software Development

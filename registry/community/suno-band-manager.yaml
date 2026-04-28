@@ -17,9 +17,9 @@ keywords:
   - music-production
   - song-creation
 
-version: "1.6.7"
-approved_tag: v1.6.7
-approved_sha: c9bcc02c18f6f25eaa493a1b9170a6aabd993d67
+version: "1.7.0"
+approved_tag: v1.7.0
+approved_sha: da591c977923e8cf0c9eeb8071ab50034f9e588d
 trust_tier: unverified
-approved_date: "2026-04-22"
+approved_date: "2026-04-26"
 reviewer: pending

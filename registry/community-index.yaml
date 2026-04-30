@@ -1,5 +1,5 @@
 # Auto-generated from registry/community/*.yaml - do not edit manually
-generated: '2026-04-28T03:12:58Z'
+generated: '2026-04-30T13:21:35Z'
 modules:
 - name: suno-band-manager
   display_name: Suno Band Manager (Mac)
@@ -20,11 +20,11 @@ modules:
   - ai-music
   - music-production
   - song-creation
-  version: 1.7.0
-  approved_tag: v1.7.0
-  approved_sha: da591c977923e8cf0c9eeb8071ab50034f9e588d
+  version: 1.7.2
+  approved_tag: v1.7.2
+  approved_sha: cacb3326bd53ab73cca85c81432b13f0e31749f5
   trust_tier: unverified
-  approved_date: '2026-04-26'
+  approved_date: '2026-04-29'
   reviewer: pending
 - name: whiteport-design-studio
   display_name: Whiteport Design Studio (For UX Professionals)

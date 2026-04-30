@@ -1,0 +1,28 @@
+name: o11y-engineer
+display_name: O11y Engineer
+code: o11y
+description: OpenTelemetry observability expert for collector configuration, instrumentation, semantic conventions, custom collector builds, and Dynatrace automation
+repository: https://github.com/henrikrexed/bmad-observability-agent
+module_definition: skills/o11y-setup/assets/module.yaml
+author: henrikrexed
+license: MIT
+default_selected: false
+type: community
+category: infrastructure-and-platforms
+subcategory: observability
+keywords:
+  - bmad
+  - opentelemetry
+  - observability
+  - dynatrace
+  - otel
+  - instrumentation
+  - collector
+  - ottl
+
+version: "2.0.0"
+approved_tag: v2.0.0
+approved_sha: 12b56ecdfc0c8c496afe45efd0aa9628579055ac
+trust_tier: unverified
+approved_date: "2026-04-30"
+reviewer: pending

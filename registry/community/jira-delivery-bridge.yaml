@@ -1,0 +1,25 @@
+name: jira-delivery-bridge
+display_name: Jira Delivery Bridge
+code: jdb
+description: Reusable BMad module for Jira setup, story and sprint publication, and controlled return sync
+repository: https://github.com/mathi0u/jira-delivery-bridge
+module_definition: skills/jdb-setup/assets/module.yaml
+author: mathi0u
+license: MIT
+default_selected: false
+type: community
+category: business-and-strategy
+subcategory: project-management
+keywords:
+  - bmad
+  - jira
+  - atlassian
+  - delivery
+  - agile
+
+version: "1.0.0"
+approved_tag: v1.0.0
+approved_sha: d266fb00b04e4695d1013ef6cad3675cb7e13ba4
+trust_tier: unverified
+approved_date: "2026-05-02"
+reviewer: pending

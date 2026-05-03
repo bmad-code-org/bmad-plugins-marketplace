@@ -128,3 +128,38 @@ modules:
       - quality
       - automation
     trust_tier: bmad-certified
+
+  - name: bmad-automator
+    display_name: BMad Automator (Experimental)
+    code: bma
+    description: Experimental pure-skill story automation for BMAD workflows across Claude Code and Codex.
+    repository: https://github.com/bmad-code-org/bmad-automator
+    source_root: payload/.claude/skills
+    npm_package: bmad-story-automator
+    author: bmad-code-org
+    license: MIT
+    default_selected: false
+    type: experimental
+    category: software-development
+    subcategory: dev-tools
+    keywords:
+      - bmad
+      - automation
+      - story-automation
+      - workflow-orchestration
+      - codex
+      - claude-code
+    trust_tier: bmad-certified
+    default_channel: stable
+    install_targets:
+      - claude-code
+      - codex
+    worker_targets:
+      - claude-code
+      - codex
+    requirements:
+      - Claude Code or Codex entrypoint
+      - Claude Code or Codex worker sessions
+      - tmux
+      - macOS, Linux, or Windows via WSL
+    install_note: "Experimental: BMad Automator supports Claude Code and Codex entrypoints, Claude Code and Codex worker sessions, and runs on macOS, Linux, or Windows via WSL. Native Windows support coming soon."

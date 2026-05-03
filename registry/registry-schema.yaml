@@ -58,8 +58,8 @@ schema:
   type:
     type: string
     required: true
-    enum: [bmad-org, community]
-    description: Module type — bmad-org (official/utility) or community
+    enum: [bmad-org, community, experimental]
+    description: Module type — bmad-org (official/utility), community, or experimental
 
   category:
     type: string

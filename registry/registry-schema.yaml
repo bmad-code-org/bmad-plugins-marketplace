@@ -34,6 +34,11 @@ schema:
     required: false
     description: Path to module.yaml within the repo (e.g., skills/module.yaml)
 
+  source_root:
+    type: string
+    required: false
+    description: Path to a pure-skill payload root when a module is not module.yaml-based
+
   npm_package:
     type: string
     required: false
@@ -53,6 +58,11 @@ schema:
     type: boolean
     required: false
     description: Whether the module is selected by default in the installer
+
+  built_in:
+    type: boolean
+    required: false
+    description: Whether the module is built into the core installer
 
   # Classification
   type:
@@ -76,12 +86,57 @@ schema:
     required: false
     description: List of keywords for search and discovery
 
+  default_channel:
+    type: string
+    required: false
+    enum: [stable, next]
+    description: Default install channel when the installer supports channel selection
+
+  install_targets:
+    type: array
+    required: false
+    description: IDE or runtime entrypoints where runnable skills should be installed
+
+  worker_targets:
+    type: array
+    required: false
+    description: Worker runtimes supported by the module
+
+  requirements:
+    type: array
+    required: false
+    description: Runtime requirements or operator prerequisites for the module
+
+  install_note:
+    type: string
+    required: false
+    description: Installer-facing note shown when the module is selected
+
   # Version and trust
-  # version: (community only, required) — pinned approved version
-  # approved_tag: (community only, required) — git tag of approved version
-  # approved_sha: (community only, required) — full commit SHA of approved tag
-  # approved_date: (community only, required) — date of approval (YYYY-MM-DD)
-  # reviewer: (community only, required) — GitHub handle of reviewer
+  version:
+    type: string
+    required: false
+    description: Community module pinned approved version
+
+  approved_tag:
+    type: string
+    required: false
+    description: Community module git tag for the approved version
+
+  approved_sha:
+    type: string
+    required: false
+    description: Community module full commit SHA for the approved tag
+
+  approved_date:
+    type: string
+    required: false
+    description: Community module approval date in YYYY-MM-DD format
+
+  reviewer:
+    type: string
+    required: false
+    description: GitHub handle of the community module reviewer
 
   trust_tier:
     type: string

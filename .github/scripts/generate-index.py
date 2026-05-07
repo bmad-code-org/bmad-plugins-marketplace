@@ -23,6 +23,23 @@ def load_categories():
 
 def load_modules():
     modules = []
+    seen = set()
+
+    def add_module(module, directory):
+        name = module.get("name")
+        key = (directory, name)
+        if key in seen:
+            return
+        seen.add(key)
+        module["_directory"] = directory
+        modules.append(module)
+
+    official_file = REGISTRY_DIR / "official.yaml"
+    if official_file.exists():
+        data = load_yaml(official_file)
+        for module in data.get("modules", []):
+            add_module(module, "official")
+
     for directory in ["official", "utility", "community"]:
         dir_path = REGISTRY_DIR / directory
         if not dir_path.exists():
@@ -31,8 +48,7 @@ def load_modules():
             if yaml_file.name == "registry-schema.yaml":
                 continue
             module = load_yaml(yaml_file)
-            module["_directory"] = directory
-            modules.append(module)
+            add_module(module, directory)
     return modules
 
 

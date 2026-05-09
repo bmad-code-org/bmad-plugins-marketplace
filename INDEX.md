@@ -10,11 +10,11 @@
 | ------ | ---- | ----------- | ----- | ----------- |
 | [bmad-creative-intelligence-suite](https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite) | official | Strategy & Planning | BMad Certified | Creative tools for writing, brainstorming, and more |
 
-## core
+## Core
 
 | Module | Type | Subcategory | Trust | Description |
 | ------ | ---- | ----------- | ----- | ----------- |
-| [bmad-core](https://github.com/bmad-code-org/BMAD-METHOD) | official | core | BMad Certified | Core configuration and shared resources |
+| [bmad-core](https://github.com/bmad-code-org/BMAD-METHOD) | official | Core | BMad Certified | Core configuration and shared resources |
 
 ## Design & Creative
 

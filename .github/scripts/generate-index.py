@@ -28,12 +28,16 @@ def load_modules():
     seen = set()
 
     def add_module(module, directory, source):
+        if not isinstance(module, dict):
+            print(f"Warning: module entry in {source} is not a mapping; skipping", file=sys.stderr)
+            return
         name = module.get("name")
         if not name:
             print(f"Warning: module in {source} is missing a name; skipping", file=sys.stderr)
             return
         key = (directory, name)
         if key in seen:
+            print(f"Warning: duplicate module {name!r} in {source}; skipping", file=sys.stderr)
             return
         seen.add(key)
         module["_directory"] = directory
@@ -42,10 +46,19 @@ def load_modules():
     official_file = REGISTRY_DIR / "official.yaml"
     if official_file.exists():
         data = load_yaml(official_file)
-        for module in data.get("modules", []):
-            add_module(module, "official", official_file)
+        if data is None:
+            print(f"Warning: {official_file} is empty; skipping", file=sys.stderr)
+        elif not isinstance(data, dict):
+            print(f"Warning: {official_file} must contain a top-level mapping; skipping", file=sys.stderr)
+        else:
+            modules_data = data.get("modules", [])
+            if not isinstance(modules_data, list):
+                print(f"Warning: {official_file} has a non-list modules field; skipping", file=sys.stderr)
+                modules_data = []
+            for module in modules_data:
+                add_module(module, "official", official_file)
 
-    for directory in ["official", "utility", "community"]:
+    for directory in ["utility", "community"]:
         dir_path = REGISTRY_DIR / directory
         if not dir_path.exists():
             continue

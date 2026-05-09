@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Generate INDEX.md and community-index.yaml from registry YAML files."""
 
-import yaml
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+import yaml
 
 REGISTRY_DIR = Path("registry")
 CATEGORIES_FILE = Path("categories.yaml")
@@ -23,6 +25,26 @@ def load_categories():
 
 def load_modules():
     modules = []
+    seen = set()
+
+    def add_module(module, directory, source):
+        name = module.get("name")
+        if not name:
+            print(f"Warning: module in {source} is missing a name; skipping", file=sys.stderr)
+            return
+        key = (directory, name)
+        if key in seen:
+            return
+        seen.add(key)
+        module["_directory"] = directory
+        modules.append(module)
+
+    official_file = REGISTRY_DIR / "official.yaml"
+    if official_file.exists():
+        data = load_yaml(official_file)
+        for module in data.get("modules", []):
+            add_module(module, "official", official_file)
+
     for directory in ["official", "utility", "community"]:
         dir_path = REGISTRY_DIR / directory
         if not dir_path.exists():
@@ -31,8 +53,7 @@ def load_modules():
             if yaml_file.name == "registry-schema.yaml":
                 continue
             module = load_yaml(yaml_file)
-            module["_directory"] = directory
-            modules.append(module)
+            add_module(module, directory, yaml_file)
     return modules
 
 

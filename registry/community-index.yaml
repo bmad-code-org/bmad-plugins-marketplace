@@ -1,5 +1,5 @@
 # Auto-generated from registry/community/*.yaml - do not edit manually
-generated: '2026-04-30T13:21:35Z'
+generated: '2026-05-09T12:46:42Z'
 modules:
 - name: suno-band-manager
   display_name: Suno Band Manager (Mac)

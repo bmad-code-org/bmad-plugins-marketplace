@@ -134,7 +134,7 @@ modules:
     code: baut
     description: BMAD story automation skills for create/dev/QA/review/retro orchestration
     repository: https://github.com/bmad-code-org/bmad-automator
-    source_root: skills
+    module_definition: skills/module.yaml
     npm_package: bmad-story-automator
     author: bmad-code-org
     license: MIT

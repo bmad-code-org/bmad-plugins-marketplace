@@ -18,15 +18,15 @@ Full details in [CONTRIBUTING.md](CONTRIBUTING.md). Before submitting, review th
 
 ## How It Works
 
-The registry contains a YAML entry for each module, organized into three directories:
+The registry contains a YAML entry for each module, organized by registry location:
 
-| Category | Directory | Description |
-| -------- | --------- | ----------- |
-| **Official** | `registry/official/` | Core BMad modules maintained by the BMad team — always tracks main |
+| Category | Registry Location | Description |
+| -------- | ----------------- | ----------- |
+| **Official** | `registry/official.yaml` | Core BMad modules maintained by the BMad team — always tracks main |
 | **Utility** | `registry/utility/` | BMad ecosystem tools and utilities — always tracks main |
 | **Community** | `registry/community/` | Modules built by community members — pinned to approved version tag + commit SHA |
 
-Each module also declares a `category` and `subcategory` from [categories.yaml](categories.yaml) for discoverability.
+Official modules are listed in `registry/official.yaml`. Utility and community modules are stored as one YAML file per module in their registry directories. Each module also declares a `category` and `subcategory` from [categories.yaml](categories.yaml) for discoverability.
 
 Browse all available modules in the **[Module Index](INDEX.md)** (auto-generated).
 

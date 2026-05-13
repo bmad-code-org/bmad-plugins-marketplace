@@ -140,6 +140,7 @@ modules:
     license: MIT
     default_selected: false
     type: experimental
+    default_channel: next
     category: software-development
     subcategory: dev-tools
     keywords:

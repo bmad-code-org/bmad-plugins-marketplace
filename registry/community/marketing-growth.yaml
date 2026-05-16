@@ -1,7 +1,7 @@
 name: marketing-growth
 display_name: Marketing Growth Suite
 code: marketing-growth
-description: AI-powered marketing team for B2B SaaS — 15 agents (6 orchestrators + 9 specialists), 6 workflow orchestrators, and the Ultimate SEO & GEO audit skill. Covers strategy, content, SEO, social, launch coordination, and growth analytics.
+description: AI-powered marketing team for B2B SaaS — 15 agents (6 orchestrators + 9 specialists) and 6 workflow orchestrators. Covers strategy, content, SEO, social, launch coordination, and growth analytics.
 repository: https://github.com/lpalokan/bmad-marketing-growth
 module_definition: module.yaml
 author: lpalokan
@@ -20,8 +20,8 @@ keywords:
   - content
   - launch
 
-version: "1.0.2"
-approved_tag: v1.0.2
+version: "1.0.3"
+approved_tag: v1.0.3
 approved_sha: null # reviewer will pin
 approved_date: null # reviewer fills
 reviewer: null # reviewer fills

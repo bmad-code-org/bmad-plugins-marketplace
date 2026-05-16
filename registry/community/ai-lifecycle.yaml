@@ -1,0 +1,27 @@
+name: ai-lifecycle
+display_name: AI Lifecycle
+code: ai
+description: Agentic team for the full AI/ML project lifecycle — domain research through production inference, covering deep learning, gradient boosting, transformers, and classical ML.
+repository: https://github.com/avielbl/ai-lifecycle
+module_definition: ai-setup/assets/module.yaml
+author: Aviel
+license: MIT
+default_selected: false
+type: community
+category: ai-and-machine-learning
+subcategory: mlops
+keywords:
+  - bmad
+  - ai
+  - ml
+  - mlops
+  - deep-learning
+  - machine-learning
+  - lifecycle
+
+version: "4.0.0"
+approved_tag: v4.0.0
+approved_sha: 6c992499636c0a53b4f4ae6f30ab8cfbd17ea9cc
+trust_tier: unverified
+approved_date: "2026-05-04"
+reviewer: pending

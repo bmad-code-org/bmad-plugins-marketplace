@@ -1,4 +1,11 @@
 categories:
+  core:
+    name: Core
+    subcategories:
+      core:
+        name: Core
+        description: Shared configuration, foundational resources, and installer defaults
+
   ai-and-machine-learning:
     name: AI & Machine Learning
     subcategories:

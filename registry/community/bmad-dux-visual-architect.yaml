@@ -1,0 +1,27 @@
+name: bmad-dux-visual-architect
+display_name: Dux Visual Architect
+code: dux
+description: Visual Architect (Mayasura) for DESIGN.md authoring, linting, screen generation, and prototype building.
+repository: https://github.com/Yash-1511/bmad-dux-visual-architect
+module_definition: skills/dux-setup/assets/module.yaml
+author: Yash-1511
+license: MIT
+default_selected: false
+type: community
+category: design-and-creative
+subcategory: ui-design
+keywords:
+  - bmad
+  - design
+  - ux
+  - ui
+  - prototype
+  - design-md
+  - visual-architect
+
+version: "1.0.0"
+approved_tag: v1.0.0
+approved_sha: 5923789c2dd774b4bce23ca45dd0ae8ad64c003a
+trust_tier: unverified
+approved_date: "2026-05-20"
+reviewer: pending

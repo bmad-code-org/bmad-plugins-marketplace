@@ -2,9 +2,9 @@
 
 ## Registry Structure
 
-| Category | Directory | Description | SHA Required | Updates |
-| -------- | --------- | ----------- | ------------ | ------- |
-| **Official** | `registry/official/` | Core BMad modules maintained by the BMad team | No — always tracks main | Managed internally |
+| Category | Registry Location | Description | SHA Required | Updates |
+| -------- | ----------------- | ----------- | ------------ | ------- |
+| **Official** | `registry/official.yaml` | Core BMad modules maintained by the BMad team | No — always tracks main | Managed internally |
 | **Utility** | `registry/utility/` | BMad ecosystem tools and utilities | No — always tracks main | Managed internally |
 | **Community** | `registry/community/` | Modules built and maintained by community members | Yes — pinned to tag + SHA | Author submits update PRs |
 

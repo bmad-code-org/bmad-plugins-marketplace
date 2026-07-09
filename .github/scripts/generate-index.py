@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Generate INDEX.md and community-index.yaml from registry YAML files."""
 
-import yaml
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+import yaml
 
 REGISTRY_DIR = Path("registry")
 CATEGORIES_FILE = Path("categories.yaml")
@@ -23,7 +25,40 @@ def load_categories():
 
 def load_modules():
     modules = []
-    for directory in ["official", "utility", "community"]:
+    seen = set()
+
+    def add_module(module, directory, source):
+        if not isinstance(module, dict):
+            print(f"Warning: module entry in {source} is not a mapping; skipping", file=sys.stderr)
+            return
+        name = module.get("name")
+        if not name:
+            print(f"Warning: module in {source} is missing a name; skipping", file=sys.stderr)
+            return
+        key = (directory, name)
+        if key in seen:
+            print(f"Warning: duplicate module {name!r} in {source}; skipping", file=sys.stderr)
+            return
+        seen.add(key)
+        module["_directory"] = directory
+        modules.append(module)
+
+    official_file = REGISTRY_DIR / "official.yaml"
+    if official_file.exists():
+        data = load_yaml(official_file)
+        if data is None:
+            print(f"Warning: {official_file} is empty; skipping", file=sys.stderr)
+        elif not isinstance(data, dict):
+            print(f"Warning: {official_file} must contain a top-level mapping; skipping", file=sys.stderr)
+        else:
+            modules_data = data.get("modules", [])
+            if not isinstance(modules_data, list):
+                print(f"Warning: {official_file} has a non-list modules field; skipping", file=sys.stderr)
+                modules_data = []
+            for module in modules_data:
+                add_module(module, "official", official_file)
+
+    for directory in ["utility", "community"]:
         dir_path = REGISTRY_DIR / directory
         if not dir_path.exists():
             continue
@@ -31,8 +66,7 @@ def load_modules():
             if yaml_file.name == "registry-schema.yaml":
                 continue
             module = load_yaml(yaml_file)
-            module["_directory"] = directory
-            modules.append(module)
+            add_module(module, directory, yaml_file)
     return modules
 
 

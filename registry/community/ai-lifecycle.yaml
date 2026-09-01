@@ -1,7 +1,7 @@
 name: ai-lifecycle
 display_name: AI Lifecycle
 code: ai
-description: Agentic team for the full AI/ML project lifecycle — domain research through production inference, covering deep learning, gradient boosting, transformers, and classical ML.
+description: Agentic team for the full AI/ML project lifecycle — domain research through production deployment, covering deep learning, gradient boosting, transformers, and classical ML.
 repository: https://github.com/avielbl/ai-lifecycle
 module_definition: ai-setup/assets/module.yaml
 author: Aviel
@@ -19,9 +19,9 @@ keywords:
   - machine-learning
   - lifecycle
 
-version: "4.0.0"
-approved_tag: v4.0.0
-approved_sha: 6c992499636c0a53b4f4ae6f30ab8cfbd17ea9cc
+version: "5.1.0"
+approved_tag: v5.1.0
+approved_sha: 94f4b50fa82719c39588ca35c2ed39ae26b62f5d
 trust_tier: unverified
-approved_date: "2026-05-04"
+approved_date: "2026-09-01"
 reviewer: pending
